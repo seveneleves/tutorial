@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 200px 200px 200px;
+}
+
+.wrapper > div {
+  border-radius: 15px;
+  background-color: #007BBE;
+  margin: 0.5em 1em 0.5em 1em;
+  color: white;
+  padding: 0 2.5em;
+  overflow: hidden;
+}
+
+.wrapper > div a {
+  display: none;
+}
+
+.wrapper > div b {
+  display: none;
+}
+
+.wrapper > div img {
+  display: none;
+}
+
+.wrapper > div:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.step-text-clear {
+  font-size: 1.5rem;
+}
+
+.step-text-hidden {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #007BBE;
+  z-index: 1;
+  animation-name: top-to-bot;
+  animation-duration: 0.6s;
+  overflow: scroll;
+}
+
+@keyframes top-to-bot {
+  from {
+    bottom: 100%;
+  }
+
+  to {
+    bottom: 0%;
+  }
+}
+
+.close {
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  right: 0;
+  margin-right: 0.5em;
+  padding: 0;
+}
+
+.close:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.bot-to-top {
+  animation-name: to-top;
+  animation-duration: 0.6s;
+}
+
+@keyframes to-top {
+  from {
+    bottom: 0%;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
+
+select {
+  display: none;
+}
+
+#step-number-modal {
+  font-size: 4rem;
+  color: white;
+  margin-left: 0.9em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.step-text-modal-big {
+  font-size: 2rem;
+  color: white;
+  margin-left: 1.85em;
+  margin-right: 1em;
+  font-weight: 500;
+}
+
+.step-text-modal-medium {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 2.5em;
+  margin-right: 4em;
+}
+
+.step-text-modal-bold {
+  font-size: 1.5rem;
+  color: white;
+  width: auto;
+  height: auto;
+  margin: 1em auto 2em auto;
+  font-weight: bold;
+  text-align: center;
+  word-break: break-all;
+  width: 85%;
+}
+
+.step-link-modal {
+  font-size: 1.5rem;
+  margin-left: 2.5em;
+}
+
+.step-link-modal a {
+  color: white;
+  color: white;
+  font-weight: 500;
+}
+
+.img-modal {
+  display: block;
+  margin: 2em auto 4em auto;
+  width: 30%;
+  box-shadow: 0px 0px 15px #686868;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 2em;
+}
+
+.flex p:first-of-type {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 2.5em;
+  margin-bottom: 0;
+}
+
+#select {
+  display: block;
+  font-size: 1.5rem;
+  margin-left: 2.5em;
+  width: 270px;
+  height: 40px;
+  padding-left: 0.2em;
+  border: none;
+}
+
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+  .wrapper {
+    grid-template-rows: 260px 260px 260px 260px;
+  }
+
+  .wrapper > div {
+    margin: 0.7em 2em 0.7em 2em;
+  }
+
+  .step-number {
+    font-size: 4rem;
+  }
+
+  .step-text-clear {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .close {
+    font-size: 6rem;
+    margin-right: 0.5em;
+  }
+
+  #step-number-modal {
+    font-size: 6.5rem;
+    margin-left: 4.3rem;
+  }
+
+  .step-text-modal-big {
+    font-size: 4.5rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .step-text-modal-medium {
+    font-size: 3rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .step-text-modal-bold {
+    font-size: 3rem;
+    padding: 0 1em 0 1em;
+  }
+
+  .step-link-modal {
+    font-size: 3rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .img-modal {
+    width: 90%;
+  }
+
+  .flex {
+    margin-top: 1.5rem;
+    margin-left: 4.3rem;
+  }
+
+  .flex p:first-of-type {
+    font-size: 3rem;
+    color: white;
+    margin-left: 0;
+  }
+
+  #select {
+    margin-left: 0;
+    font-size: 3rem;
+    width: 540px;
+    height: 70px;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  .wrapper {
+    grid-template-rows: 260px 260px 260px 260px;
+  }
+
+  .wrapper > div {
+    margin: 0.7em 2em 0.7em 2em;
+  }
+
+  .step-number {
+    font-size: 4rem;
+  }
+
+  .step-text-clear {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .close {
+    font-size: 6rem;
+    margin-right: 0.5em;
+  }
+
+  #step-number-modal {
+    font-size: 6.5rem;
+    margin-left: 4.3rem;
+  }
+
+  .step-text-modal-big {
+    font-size: 4.5rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .step-text-modal-medium {
+    font-size: 3rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .step-text-modal-bold {
+    font-size: 3rem;
+    padding: 0 1em 0 1em;
+  }
+
+  .step-link-modal {
+    font-size: 3rem;
+    margin-left: 4.3rem;
+    margin-right: 2rem;
+  }
+
+  .img-modal {
+    width: 90%;
+  }
+
+  .flex {
+    margin-top: 1.5rem;
+    margin-left: 4.3rem;
+  }
+
+  .flex p:first-of-type {
+    font-size: 3rem;
+    color: white;
+    margin-left: 0;
+  }
+
+  #select {
+    margin-left: 0;
+    font-size: 3rem;
+    width: 540px;
+    height: 70px;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}

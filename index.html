@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vote Tutorial</title>
+  </head>
+  <body>
+
+    <h1>Tutoriel de vote</h1>
+
+    <div class="wrapper">
+      <div onclick="modal(this)" class="container">
+        <p class="step-number">Etape 1</p>
+        <p class="step-text-clear">Installation de MetaMask Mobile</p>
+        <p class="step-text-hidden">MetaMask est une application mobile qui vous permet de communiquer avec la blockchain Ethereum pour l'envoi et la réception de tokens.</p>
+        <a href="https://mobile.metamask.io/">Cliquez ici pour installer MetaMask mobile !</a>
+        <p class="step-text-hidden">La création de votre portefeuille ne prend que quelques secondes.</p>
+      </div>
+      <div onclick="modal(this)" class="container">
+        <p class="step-number">Etape 2</p>
+        <p class="step-text-clear">Configuration du Token MC2I</p>
+        <p class="step-text-hidden">Le TMC2I est un token personnalisé, c'est la raison pour laquelle il n'apparaîtra pas dans votre portefeuille MetaMask par défaut. Pour ce faire :</p>
+        <p class="step-text-hidden">&#8594; Dans MetaMask, cliquez sur l'icône du menu située en haut à gauche de la fenêtre</p>
+        <img alt="home_crop">
+        <p class="step-text-hidden">&#8594; Cliquez sur "Wallet" puis, en haut de la page qui vient de s'ouvrir, sur "Ethereum Main Network"</p>
+        <img alt="network_crop">
+        <p class="step-text-hidden">&#8594; Dans la liste des réseaux, sélectionnez "Ropsten Test Network"</p>
+        <img alt="network_list_crop_fine">
+        <p class="step-text-hidden">&#8594; Dans la fenêtre de votre portefeuille, cliquez sur "+ ADD TOKENS" puis sur l'onglet "CUSTOM TOKEN"</p>
+        <img alt="custom_crop">
+        <p class="step-text-hidden">&#8594; Dans le champ "Token Address", copiez-collez l'adresse suivante : </p>
+        <b>0xbf0776118b8c7e41b2409295307d557ca16fa989</b>
+        <p class="step-text-hidden">&#8594; Le reste des champs seront complétés automatiquement. Puis cliquez sur "ADD TOKEN". Le TMC2I apparaît désormais dans votre liste de tokens !</p>
+      </div>
+      <div onclick="modal(this)" class="container">
+        <p class="step-number">Etape 3</p>
+        <p class="step-text-clear">Récupération de l'adressse</p>
+        <p class="step-text-hidden">Vous utiliserez MetaMask pour exprimer votre vote. Pour ce faire, vous disposez de deux éléments :</p>
+        <p class="step-text-hidden">&#8594; 0,1 ETH qui vous serviront à régler les "frais" fictifs de transaction</p>
+        <p class="step-text-hidden">&#8594; 1 TMC2I soit l'équivalent d'une voix au moment du vote</p>
+        <br>
+        <p class="step-text-hidden">Pour exprimer votre vote :</p>
+        <p class="step-text-hidden">&#8594; Dans MetaMask, cliquez sur l'icône du menu située en haut à gauche de la fenêtre</p>
+        <p class="step-text-hidden">&#8594; Cliquez sur "Send"</p>
+        <p class="step-text-hidden">&#8594; Dans le champ "To:", copiez-collez l'adresse Ethereum de la technologie pour laquelle vous souhaitez voter en vous aidant du menu déroulant qui suit :</p>
+        <select></select>
+      </div>
+      <div onclick="modal(this)" class="container">
+        <p class="step-number">Etape 4</p>
+        <p class="step-text-clear">Votez !</p>
+        <p class="step-text-hidden">Dans le champ "Amount", cliquez sur le triangle dirigé vers le bas, sélectionnez "TMC2I" puis cliquez sur "Max".</p>
+        <img alt="transaction_crop">
+        <p class="step-text-hidden">Laissez les autres paramètres inchangés puis cliquez sur "Next" et "Confirm". Félicitations ! Votre TMC2I a été envoyé à l'adresse indiquée.</p>
+        <a href="https://seveneleves.github.io/token-counter">Les résultats du vote sont à consulter ici !</a>
+      </div>
+    </div>
+
+    <div class="modal">
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+
+  </body>
+</html>
